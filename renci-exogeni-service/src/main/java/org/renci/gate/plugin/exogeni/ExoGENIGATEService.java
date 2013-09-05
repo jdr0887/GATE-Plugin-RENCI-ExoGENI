@@ -1,7 +1,9 @@
 package org.renci.gate.plugin.exogeni;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
@@ -33,18 +35,19 @@ public class ExoGENIGATEService extends AbstractGATEService {
     }
 
     @Override
-    public Map<String, GlideinMetric> lookupMetrics() throws GATEException {
+    public List<GlideinMetric> lookupMetrics() throws GATEException {
         logger.info("ENTERING lookupMetrics()");
         Map<String, GlideinMetric> metricsMap = new HashMap<String, GlideinMetric>();
 
-        // stub out the metricsMap
-        Map<String, Queue> queueInfoMap = getSite().getQueueInfoMap();
-        for (String key : queueInfoMap.keySet()) {
-            Queue queue = queueInfoMap.get(key);
-            metricsMap.put(queue.getName(), new GlideinMetric(0, 0, queue.getName()));
+        List<Queue> queueList = getSite().getQueueList();
+        for (Queue queue : queueList) {
+            metricsMap.put(queue.getName(), new GlideinMetric(getSite().getName(), queue.getName(), 0, 0));
         }
 
-        return metricsMap;
+        List<GlideinMetric> metricList = new ArrayList<GlideinMetric>();
+        metricList.addAll(metricsMap.values());
+
+        return metricList;
     }
 
     @Override
