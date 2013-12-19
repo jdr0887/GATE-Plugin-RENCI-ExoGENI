@@ -2,13 +2,13 @@
   <parent>
     <groupId>org.renci.gate.plugins.renci</groupId>
     <artifactId>exogeni</artifactId>
-    <version>0.2.7-SNAPSHOT</version>
+    <version>0.2.7</version>
   </parent>
   <name>GATE :: Plugins :: RENCI :: ExoGENI :: Commands</name>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.renci.gate.plugins.renci.exogeni</groupId>
   <artifactId>renci-exogeni-commands</artifactId>
-  <version>0.2.7-SNAPSHOT</version>
+  <version>0.2.7</version>
   <packaging>bundle</packaging>
   <dependencies>
     <dependency>
