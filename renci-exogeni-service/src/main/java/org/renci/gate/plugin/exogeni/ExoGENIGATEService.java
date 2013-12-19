@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.StringUtils;
 import org.renci.gate.AbstractGATEService;
 import org.renci.gate.GATEException;
 import org.renci.gate.GlideinMetric;
