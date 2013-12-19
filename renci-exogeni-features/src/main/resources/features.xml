@@ -1,6 +1,7 @@
 <features name="gate-plugin-renci-exogeni-${project.version}">
 
   <feature name="gate-plugin-renci-exogeni" version="${project.version}" resolver="(obr)">
+    <bundle>mvn:org.renci.gate.plugins.renci.exogeni/renci-exogeni-commands/${project.version}</bundle>
     <bundle>mvn:org.renci.gate.plugins.renci.exogeni/renci-exogeni-service/${project.version}</bundle>
   </feature>
 
