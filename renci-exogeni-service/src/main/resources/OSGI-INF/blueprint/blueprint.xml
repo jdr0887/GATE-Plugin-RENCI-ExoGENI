@@ -20,12 +20,12 @@
     <property name="maxMultipleJobsToSubmit" value="2" />
     <property name="pendingTime" value="1440" />
     <property name="runTime" value="5760" />
+    <property name="numberOfProcessors" value="4" />
   </bean>
 
   <bean id="site" class="org.renci.jlrm.Site">
     <property name="name" value="ExoGENI" />
     <property name="project" value="RENCI" />
-    <property name="numberOfProcessors" value="4" />
     <property name="username" value="${username}" />
     <property name="submitHost" value="${submitHost}" />
     <property name="maxPending" value="${maxPending}" />
@@ -41,7 +41,7 @@
     <property name="site" ref="site" />
     <property name="collectorHost" value="${collectorHost}" />
     <property name="activeQueues" value="${activeQueues}" />
-    <cm:managed-properties persistent-id="org.renci.gate.service.blueridge" update-strategy="container-managed" />
+    <cm:managed-properties persistent-id="org.renci.gate.service.exogeni" update-strategy="container-managed" />
   </bean>
 
   <service ref="exoGENIGATEService" interface="org.renci.gate.GATEService" />
