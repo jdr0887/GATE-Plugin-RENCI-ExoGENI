@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  */
 public class ExoGENIGATEService extends AbstractGATEService {
 
-    private final Logger logger = LoggerFactory.getLogger(ExoGENIGATEService.class);
+    private static final Logger logger = LoggerFactory.getLogger(ExoGENIGATEService.class);
 
     private String username;
 
