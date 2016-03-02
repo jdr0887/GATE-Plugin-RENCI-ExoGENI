@@ -2,13 +2,13 @@
   <parent>
     <groupId>org.renci.gate.plugins.renci</groupId>
     <artifactId>exogeni</artifactId>
-    <version>0.2.19</version>
+    <version>0.2.20-SNAPSHOT</version>
   </parent>
   <name>GATE :: Plugins :: RENCI :: ExoGENI :: Service</name>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.renci.gate.plugins.renci.exogeni</groupId>
   <artifactId>renci-exogeni-service</artifactId>
-  <version>0.2.19</version>
+  <version>0.2.20-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <dependencies>
     <dependency>
